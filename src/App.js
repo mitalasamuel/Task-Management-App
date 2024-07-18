@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import AddTask from './components/AddTask';
+import TaskList from './components/TaskList';
+import VisibilityFiltersComponent from './components/VisibilityFilters';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+      <div className="w-full max-w-lg p-6 bg-white rounded-md shadow-md">
+        <h1 className="text-2xl font-bold mb-6 text-center">Task Manager</h1>
+        <AddTask />
+        <VisibilityFiltersComponent />
+        <TaskList />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
