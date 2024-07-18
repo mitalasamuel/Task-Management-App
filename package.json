@@ -1,5 +1,6 @@
 {
-  "name": "graph",
+  "name": "Task-Management-App",
+  "homepage": "https://mitalasamuel.github.io/Task-Management-App",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
